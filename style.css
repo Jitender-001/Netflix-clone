@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+10&family=Jersey+20&family=Jersey+20+Charted&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.background-img{
+    background-color: rgba(16, 15, 15,0.75);
+    position: absolute;
+    width: 100%;
+}
+
+.background-img img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+}
+
+.navbar-left{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.navbar-left img{
+    width: 60%;
+    height: 10%;
+}
+
+.navbar-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.navbar-right button{
+    width:15%;
+    font-size: 1rem;
+}
+
+.background-content{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.background-content p{
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.background-content .bold{
+    font-size: 3.5rem;
+}
+
+.light{
+    font-size: 2rem;
+}
+
+.light1{
+    font-size: 1.3rem;
+}
+
+.details1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:3%; 
+    /* border: 1px solid green; */
+}
+
+.details1 input{
+    width: 40%;
+}
+
+.details1 button{
+    width: 15%;
+    font-size: 1.5rem;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2, 2, 2);
+    padding-top: 1%;
+}
+
+.slideshow{
+    margin-top: 2%;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;
+}
+
+.card-content{
+    margin: 3% 0 3% 0;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+
+.card-content img{
+    width: 100%;
+    height: 80%;
+}
+
+.card-content .left{
+    width: 50%;
+}
+
+.card-content .right{
+    width: 50%;
+}
+
+.card-content h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.card-content h3{
+    font-size:1.5rem;
+    text-align: center;
+}
+
+.faqs{
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2%;
+    font-size: 1.2rem;
+}
+
+.faqs h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.faqs a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.faqs a:hover{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.card-header{
+    border: none;
+}
+
+.card-header .btn{
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.lower-part{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lower-part p{
+    text-align: center;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    gap:2%;
+}
+
+.details input{
+    width: 40%;
+}
+
+.details button{
+    width:20%;
+    height:15%;
+    font-size: 2rem;
+}
+
+.footer{
+    margin-top: 3%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.row a{
+    width: 20%;
+    margin: 1%;
+    color: white;
+}
+
+.top-btn a{
+    color: white;
+}
+
+.creator{
+    color: antiquewhite ;
+    width: 100%;
+    text-align: center;
+    height: 4rem;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+/* for mobiles and small screens */
+@media(max-width:427px){
+
+    .navbar-left{
+        width: 40%;
+    }
+    
+    .navbar-left img{
+        width: 80%;
+        height: 10%;
+    }
+
+    .navbar-right button{
+        font-size:50%;
+        width:30%;
+    }
+
+    .background-content .bold{
+        font-size: 2.3rem;
+        padding-left: 5%;
+    }
+
+    .light{
+        font-size: 1.7rem;
+        padding-left: 5% ;
+    }
+
+    .light1{
+        font-size: 1rem;
+        padding-left: 5%;
+    }
+
+    .slideshow{
+        margin-top: 6%;
+    }
+
+    .card-content{
+        flex-direction: column;
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
+    .card-content .left{
+        width: 100%;
+        padding-left: 5%;
+    }
+    
+    .card-content .right{
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .card-content h1{
+        font-size: 2.2rem;
+    }
+    
+    .card-content h3{
+        font-size:1rem;
+    }
+
+    .faqs h1{
+        font-size: 2rem;
+    }
+
+    .details, .details1{
+        flex-direction: column;
+    }
+
+    .details input, .details1 input{
+        width: 100%;
+        margin-bottom: 1%;
+    }
+
+    .details button, .details1 button{
+        width: 40%;
+        font-size: 1rem;
+        margin-top: 1%;
+        margin-left: 30%;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+}
+
+
+
+
+/* for tablets and medium screens */
+
+@media (min-width:420px ) and (max-width:778px){
+    .navbar-left{
+        width: 40%;
+    }
+    
+    .navbar-left img{
+        width: 50%;
+        height: 10%;
+    }
+
+    .navbar-right button{
+        font-size:60%;
+        width:25%;
+    }
+
+    .bold{
+        font-size: 2rem;
+    }
+
+    .background-content .bold{
+        font-size: 2.3rem;
+        padding-left: 5%;
+    }
+
+    .light{
+        font-size: 1.7rem;
+        padding-left: 5% ;
+    }
+
+    .light1{
+        font-size: 1rem;
+        padding-left: 5%;
+    }
+
+    .slideshow{
+        margin-top:7%;
+    }
+
+    .card-content .left{
+        width: 100%;
+    }
+    
+    .card-content .right{
+        width: 100%;
+    }
+
+    .card-content h1{
+        font-size: 2.5rem;
+    }
+    
+    .card-content h3{
+        font-size:1.5rem;
+    }
+
+    .details button, .details1 button{
+        font-size: 1rem;
+    }
+
+}
