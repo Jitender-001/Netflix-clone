@@ -311,8 +311,14 @@
         flex-direction: column;
     }
 
-    .details input, .details1 input{
+        .details input{
         width: 100%;
+        margin-bottom: 1%;
+    }
+
+    .details1 input{
+        margin-left: 10%;
+        width: 80%;
         margin-bottom: 1%;
     }
 
